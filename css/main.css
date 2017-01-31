@@ -1,0 +1,65 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  font-family: Overpass, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+section {
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
+}
+
+a.btn {
+  color: #fff;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, .5);
+}
+
+.btn:hover {
+  border: none;
+  color: #ff9500;
+  background-color: #fff;
+}
+
+.icon {
+  color: rgba(255, 255, 255, 1);
+}
+
+h1, h2, p {
+  text-align: left;
+  color: #fff;
+}
+
+.border {
+  border-bottom: 3px solid rgba(255, 255, 255, .3);
+}
+
+@media only screen and (min-width: 60em) {
+
+  li {
+    border-right: 3px solid rgba(255, 255, 255, .5);
+    border-bottom: 0;
+  }
+
+  .mecha {
+    border-right: 0;
+  }
+}
